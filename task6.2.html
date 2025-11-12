@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent
+        {
+            display: grid;
+            grid-template-columns: repeat(3);
+            grid-template-rows: 3;
+        row-gap: 10px;
+        column-gap: 10px;
+        }
+        .number
+        
+        {
+        display: grid;
+        border:yellow;
+        grid-template-columns: repeat(4,50px);
+        grid-template-rows: repeat(3,50px);
+
+        }
+        .number div
+        {
+     
+      align-items: center;
+        color: white;
+
+        }
+        .item1
+        {
+            background-color: aqua;
+        }
+        .item2{ background-color: blue;}
+        .item3{ background-color:chocolate;}
+        .item4{ background-color:blueviolet;}
+        .item5{ background-color:greenyellow;}
+        .item6{ background-color:hotpink;}
+        .item7{ background-color:turquoise;}
+        .item8{ background-color:tomato;}
+        .item9{ background-color:violet;}
+ 
+.grid {
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;     /* 3 صفوف */
+            grid-template-columns: 2fr 1fr;      /* عمودين في الصف الوسط */
+            height: 100vh;
+            gap: 10px;                           /* مسافة بينهم */
+            padding: 15px;
+            background: #222;
+        }
+
+        .black  { background: #000; grid-column: 1 / -1; } /* يغطي الصف كله */
+        .orange { background: #ff8c00; }
+        .green  { background: #006400; }
+        .blue   { background: #0000cd; grid-column: 1 / -1; }
+
+        .container3
+        {
+           display: flex;
+            height: 100vh;
+            border: 10px solid #b8860b;        /* الإطار الذهبي */
+            border-radius: 10px;
+        }
+        .box {
+           flex: 1;                           /* كل واحد ياخد نفس المساحة */
+            display: flex;
+            justify-content: center;
+           
+            font-size: 5vw;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+    .box:nth-child(1) { background: #006400; } /* أخضر غامق */
+        .box:nth-child(2) { background: #ffd700; } /* أصفر */
+        .box:nth-child(3) { background: #4b0082; } /* بنفسجي */
+        .box:nth-child(4) { background: #696969; } /* رمادي */
+        .box:nth-child(5) { background: #0000cd; } /* أزرق */
+        .box:nth-child(6) { background: #ffa500; } /* برتقالي */
+        .box:nth-child(7) { background: #ffb6c1; } /* وردي فاتح */
+        .box:nth-child(8) { background: #ff0000; } /* أحمر */
+        .box:nth-child(9) { background: #8b0000; } /* أحمر غامق */
+    </style>
+</head>
+<body>
+   <div class="parent">
+
+   <div class="row1">
+    <img src="pexels-pixabay-56866.jpg" width="100px" height="100px">
+    <img src="download.jfif" width="100px" height="100px">
+    <img src="download (1).jfif" width="100px" height="100px">
+   </div>
+   
+    <div class="row2">
+    <img src="beautiful-flowers-lotus.webp" width="100px" height="100px"> 
+    <img src="images.jfif" width="100px" height="100px">
+    <img src="images (2).jfif" width="100px" height="100px">
+    </div>
+
+   <div class="row3">
+      <img src="b59d9e9449cb29c2a24fc41643405ab1.jpg" width="100px" height="100px">
+   <img src="images (1).jfif" width="100px" height="100px">
+    </div>
+</div>
+<hr> 
+<div class="grid">
+        <div class="black"></div>
+        
+        <div class="orange"></div>
+        <div class="green"></div>
+        
+        <div class="blue"></div>
+    </div>
+
+<hr>
+
+<div class="number">
+<div class="item1">1</div>
+<div class="item2">2</div>
+<div class="item3">3</div>
+<div class="item4">4</div>
+<div class="item5">5</div>
+<div class="item6">6</div>
+<div class="item7">7</div>
+<div class="item8">8</div>
+<div class="item9">9</div>
+
+
+
+    </div>
+</div>
+
+<hr>
+<div class="container3">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+    </div>
+</body>
+</html>
